@@ -1,3 +1,5 @@
+import "@fontsource/lexend-mega/700.css"
+
 import Styled from "./Button.styled";
 
 export interface ButtonProps {

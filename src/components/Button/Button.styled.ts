@@ -18,12 +18,15 @@ const Button = styled.button<{ variant: keyof typeof buttonVariants }>`
   padding: 10px 24px;
   border-color: ${({ variant }) => buttonVariants[variant].border};
   border-width: 3px;
+  border-style: solid;
   background-color: ${({ variant }) => buttonVariants[variant].background.default};
   color: ${({ variant }) => buttonVariants[variant].text};
   letter-spacing: -3px;
   font-size: 16px;
+  font-family: 'Lexend Mega', sans-serif;
   line-height: 20px;
   box-shadow: 3px 3px 0px 0px #000000;
+  cursor: pointer;
 
   &:hover {
     border-color: ${({ variant }) => buttonVariants[variant].border};
