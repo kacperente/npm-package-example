@@ -9,7 +9,11 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "files": ["dist"],
+  "module": "./dist/components-library.es.js",
+  "types": "./dist/components-library.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/components-library.es.js",
@@ -21,8 +25,8 @@
     }
   },
   "dependencies": {
-    "process": "0.11.10",
-    "@fontsource/lexend-mega": "^4.5.14"
+    "@fontsource/lexend-mega": "^4.5.14",
+    "process": "0.11.10"
   },
   "devDependencies": {
     "@types/node": "^20.1.0",
@@ -39,7 +43,8 @@
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.10",
     "typescript": "^5.0.2",
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
