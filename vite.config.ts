@@ -17,7 +17,7 @@ export default defineConfig({
       entry: resolve('src/components', 'index.ts'),
       name: 'ComponentsLibrary',
       formats: ['es', 'umd'],
-      fileName: (format) => `components-library.${format}.js`,
+      fileName: (format) => `neubrutalism.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'styled-components', 'react/jsx-runtime'],

@@ -1,5 +1,5 @@
 {
-  "name": "npm-package-example",
+  "name": "neubrutalism",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,16 +10,16 @@
     "lint:package": "publint",
     "preview": "vite preview"
   },
-  "module": "./dist/components-library.es.js",
-  "types": "./dist/components-library.d.ts",
+  "module": "./dist/neubrutalism.es.js",
+  "types": "./dist/neubrutalism.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "types": "./dist/components-library.d.ts",
-      "import": "./dist/components-library.es.js",
-      "require": "./dist/components-library.umd.js"
+      "types": "./dist/neubrutalism.d.ts",
+      "import": "./dist/neubrutalism.es.js",
+      "require": "./dist/neubrutalism.umd.js"
     },
     "./styles/style.css": {
       "import": "./dist/style.css",
