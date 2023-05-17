@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:package": "publint",
     "preview": "vite preview"
   },
   "module": "./dist/components-library.es.js",
@@ -16,6 +17,7 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/components-library.d.ts",
       "import": "./dist/components-library.es.js",
       "require": "./dist/components-library.umd.js"
     },
@@ -39,6 +41,7 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "publint": "^0.1.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.10",
