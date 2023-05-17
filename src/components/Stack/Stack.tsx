@@ -6,7 +6,7 @@ export interface StackProps {
   gap?: string;
 }
 
-function Button({ children, direction, gap}: StackProps) {
+function Button({ children, direction, gap}: StackProps): React.ReactElement {
   return <Styled.Stack direction={direction} gap={gap}>{children}</Styled.Stack>
 }
 

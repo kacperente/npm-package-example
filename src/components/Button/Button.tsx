@@ -7,7 +7,7 @@ export interface ButtonProps {
   variant: "primary" | "secondary";
 }
 
-function Button({ children, variant }: ButtonProps) {
+function Button({ children, variant }: ButtonProps): React.ReactElement {
   return <Styled.Button variant={variant}>{children}</Styled.Button>
 }
 

@@ -7,7 +7,7 @@ export interface TextProps {
   color: React.CSSProperties['color'];
 }
 
-function Button({ children, color }: TextProps) {
+function Button({ children, color }: TextProps): React.ReactElement {
   return <Styled.Text color={color}>{children}</Styled.Text>
 }
 

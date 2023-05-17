@@ -4,7 +4,7 @@ export interface CardProps {
   children: React.ReactNode;
 }
 
-function Button({ children }: CardProps) {
+function Button({ children }: CardProps): React.ReactElement {
   return <Styled.Card>{children}</Styled.Card>
 }
 
