@@ -19,6 +19,7 @@ const Button = styled.button<{ variant: keyof typeof buttonVariants }>`
   border-color: ${({ variant }) => buttonVariants[variant].border};
   border-width: 3px;
   border-style: solid;
+  border-radius: 6px;
   background-color: ${({ variant }) => buttonVariants[variant].background.default};
   color: ${({ variant }) => buttonVariants[variant].text};
   letter-spacing: -3px;
