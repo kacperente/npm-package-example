@@ -7,8 +7,8 @@ export interface TextProps {
   color: React.CSSProperties['color'];
 }
 
-function Button({ children, color }: TextProps): React.ReactElement {
+function Text({ children, color }: TextProps): React.ReactElement {
   return <Styled.Text color={color}>{children}</Styled.Text>
 }
 
-export default Button;
+export default Text;

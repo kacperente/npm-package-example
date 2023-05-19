@@ -16,7 +16,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve('src/components', 'index.ts'),
-      name: 'ComponentsLibrary',
+      name: 'Neubrutalism',
       formats: ['es', 'umd'],
       fileName: (format) => `neubrutalism.${format}.js`,
     },

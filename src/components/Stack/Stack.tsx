@@ -3,11 +3,11 @@ import Styled from "./Stack.styled";
 export interface StackProps {
   children: React.ReactNode;
   direction: "row" | "column";
-  gap?: string;
+  gap?: React.CSSProperties['gap'];
 }
 
-function Button({ children, direction, gap}: StackProps): React.ReactElement {
+function Stack({ children, direction, gap}: StackProps): React.ReactElement {
   return <Styled.Stack direction={direction} gap={gap}>{children}</Styled.Stack>
 }
 
-export default Button;
+export default Stack;
